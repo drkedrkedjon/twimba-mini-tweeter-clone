@@ -47,6 +47,7 @@ h1 {
   resize: none;
   border: none;
   font-size: 20px;
+  font-family: inherit;
 }
 
 .twitear-btn {
@@ -61,5 +62,32 @@ h1 {
   color: white;
   cursor: pointer;
 }
-
 /* Section tweetar fin */
+
+/* Section main tweet feed */
+main {
+  margin-block-start: 20px;
+}
+.tweet {
+  display: grid;
+  grid-template-columns: 50px auto;
+  gap: 10px;
+  border-top: 1px solid #999;
+  padding-block: 20px;
+}
+.tweet-contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tweet-interacciones {
+  display: flex;
+  /* justify-content: center; */
+  gap: 5px;
+}
+.tweet-interaccion {
+  width: 30%;
+}
+.tweet-usuario {
+  font-size: 14px;
+}
