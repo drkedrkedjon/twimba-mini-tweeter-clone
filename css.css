@@ -9,11 +9,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  margin-block-end: 30px;
+}
+
 .container {
   background-color: white;
   max-width: 360px;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .avatar {
@@ -21,14 +25,41 @@ body {
   border-radius: 50%;
 }
 
+h1 {
+  color: #1DA1F2;
+}
+
 /* Section tweetar */
 
 .twitear {
   display: grid;
   gap: 10px;
-  grid-template-columns: 60px auto;
+  grid-template-columns: 50px auto;
   grid-template-rows: auto auto;
 }
 .twitear-avatar {
-
+  grid-column: 1 / 2;
 }
+
+.twitear-input {
+  grid-column: 2 / -1;
+  height: 50px;
+  resize: none;
+  border: none;
+  font-size: 20px;
+}
+
+.twitear-btn {
+  grid-column: 1 / -1;
+  margin-block-start: 20px;
+  background-color: #1DA1F2;
+  padding: 10px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
+}
+
+/* Section tweetar fin */
