@@ -12,19 +12,19 @@ export const tweetsData = [
       uuid: '4b161eee-c0f5-4545-9c4b-8562944223ee',
   },    
   {
-      handle: `@poposlavski ✅`,
+      handle: `@poposlavski 🫶`,
       profilePic: `/imagenes/popo.jpg`,
       likes: 6500,
       retweets: 234,
       tweetText: `I need volunteers for a one-way mission to Mars 🪐. No experience necessary🚀`,
       replies: [
                 {
-              handle: `@clauchakimaki ✅`,
+              handle: `@clauchakimaki 💎`,
               profilePic: `/imagenes/clau.jpg`,
               tweetText: `Yes! Sign me up! 😎🛩`,
           },
                 {
-              handle: `@zorkabosnai ✅`,
+              handle: `@zorkabosnai 😎`,
               profilePic: `imagenes/zorka.jpg`,
               tweetText: `I went last year😴`,
           },
@@ -34,19 +34,19 @@ export const tweetsData = [
       uuid: '3c23454ee-c0f5-9g9g-9c4b-77835tgs2',
   },
       {
-      handle: `@zorkabosnai`,
+      handle: `@zorkabosnai 😎`,
       profilePic: `imagenes/zorka.jpg`,
       likes: 10,
       retweets: 3,
       tweetText: `Are you a coder if you only know HTML?`,
       replies: [
           {
-              handle: `@clauchakimaki`,
+              handle: `@clauchakimaki 💎`,
               profilePic: `imagenes/clau.jpg`,
               tweetText: `No. Obviosuly not. Go get a job in McDonald's.`,
           },
           {
-              handle: `@poposlavski`,
+              handle: `@poposlavski 🫶`,
               profilePic: `imagenes/popo.jpg`,
               tweetText: `You are wonderful just as you are! ❤️`,
           },
