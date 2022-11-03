@@ -91,3 +91,6 @@ main {
 .tweet-usuario {
   font-size: 14px;
 }
+i {
+  cursor: pointer;
+}
