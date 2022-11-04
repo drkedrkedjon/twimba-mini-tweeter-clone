@@ -93,4 +93,8 @@ main {
 }
 i {
   cursor: pointer;
+  color: grey;
+}
+.ocultar-respuestas {
+  display: none;
 }

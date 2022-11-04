@@ -8,11 +8,9 @@ export function readLocalStorage() {
 
 export function getData(data) {
   if (localStorage.getItem('twimbatweet')) {
-    // console.log('true')
     return readLocalStorage()
   } else {
     saveToLocalStorage(data)
-    // console.log('false')
     return readLocalStorage()
   }
 }
