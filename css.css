@@ -82,7 +82,6 @@ main {
 }
 .tweet-interacciones {
   display: flex;
-  /* justify-content: center; */
   gap: 5px;
 }
 .tweet-interaccion {
@@ -97,4 +96,22 @@ i {
 }
 .ocultar-respuestas {
   display: none;
+}
+/* Reply bloque */
+
+.reply-bloque {
+  border-top: 1px solid #999;
+  padding-top: 15px;
+}
+.reply-btn {
+  margin-block-start: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  grid-column: 2/-1;
+}
+.reply-input {
+  font-size: initial;
+}
+.ocultar-reply-bloque {
+  display: block;
 }
