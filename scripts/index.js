@@ -46,7 +46,7 @@ function abrirReplyBloque(tweetUuid) {
   } else if (!tweetEncontrado.isReplyVisible) {
     replyHtml.innerHTML = `
       <section class="twitear reply-bloque">
-        <img class="twitear-avatar avatar" src="/imagenes/sasa.jpg" alt="Avatar">
+        <img class="twitear-avatar avatar" src="imagenes/sasa.jpg" alt="Avatar">
         <textarea name="twitear-input" class="twitear-input reply-input" id="reply-input-${tweetUuid}" placeholder="Responde aqui..."></textarea>
         <button data-replybtn="${tweetUuid}" class="twitear-btn reply-btn" id="reply-btn-${tweetUuid}">Reply</button>
       </section>
