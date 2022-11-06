@@ -3,6 +3,10 @@ import { saveToLocalStorage, readLocalStorage, getData } from "./utils.js";
 import { v4 as uuidv4 } from "https://jspm.dev/uuid";
 let twimbaFeed = getData(tweetsData);
 
+function localStorage() {
+  saveToLocalStorage(twimbaFeed);
+  twimbaFeed = readLocalStorage();
+}
 document.addEventListener("click", function (e) {
   if (e.target.id === "twitear-btn") {
     newTweet();
@@ -22,7 +26,17 @@ document.addEventListener("click", function (e) {
   if (e.target.dataset.replybtn) {
     newReplay(e.target.dataset.replybtn);
   }
+  if (e.target.dataset.delete) {
+    deleteTweet(e.target.dataset.delete)
+  }
 });
+function deleteTweet(tweetUuid) {
+  const tweetEncontrado = twimbaFeed.findIndex((tweet) => tweet.uuid === tweetUuid);
+  console.log(tweetEncontrado)
+  twimbaFeed.splice(tweetEncontrado, 1)
+  localStorage()
+  renderHtml();
+}
 function newReplay(tweetUuid) {
   const textInput = document.querySelector(`#reply-input-${tweetUuid}`);
   const tweetEncontrado = twimbaFeed.find((tweet) => tweet.uuid === tweetUuid);
@@ -32,8 +46,7 @@ function newReplay(tweetUuid) {
     tweetText: textInput.value,
   });
   tweetEncontrado.isReplyVisible = false;
-  saveToLocalStorage(twimbaFeed);
-  twimbaFeed = readLocalStorage();
+  localStorage()
   renderHtml();
 }
 function abrirReplyBloque(tweetUuid) {
@@ -86,12 +99,12 @@ function newTweet() {
       isLiked: false,
       isRetweeted: false,
       isReplyVisible: false,
+      canDelete: true,
       uuid: uuidv4(),
     };
     tweetInput.value = "";
     twimbaFeed.unshift(newTweetObject);
-    saveToLocalStorage(twimbaFeed);
-    twimbaFeed = readLocalStorage();
+    localStorage()
     renderHtml();
   }
 }
@@ -106,6 +119,7 @@ function generarHtml() {
     if (tweet.isRetweeted) {
       retweetColor = "limegreen";
     }
+    const deleteIcon = `<i data-delete="${tweet.uuid}" class="fa-solid fa-trash"></i>`
 
     let replyHtml = "";
     if (tweet.replies.length > 0) {
@@ -133,6 +147,8 @@ function generarHtml() {
             <span class="tweet-interaccion"><i style="color: ${likesColor}" data-likes="${tweet.uuid}" class="icono-color fa-solid fa-heart"></i> ${tweet.likes}</span>
             <span class="tweet-interaccion"><i style="color: ${retweetColor}" data-retweets="${tweet.uuid}" class="icono-color fa-solid fa-retweet"></i> ${tweet.retweets}</span>
             <span class="tweet-interaccion"><i data-replytweet="${tweet.uuid}" class="fa-regular fa-reply"></i></span>
+            <span class="tweet-interaccion">${tweet.canDelete ? deleteIcon : ''
+      }</span>
           </div>
           <div class="ocultar-reply-bloque" id="reply-bloque-${tweet.uuid}"></div>
           <div class="ocultar-respuestas" id="tweet-replies-${tweet.uuid}">${replyHtml}</div>
