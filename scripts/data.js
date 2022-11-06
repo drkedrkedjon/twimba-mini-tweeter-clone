@@ -4,8 +4,7 @@ export const tweetsData = [
       profilePic: `imagenes/clau.jpg`,
       likes: 27,
       retweets: 10,
-      tweetText: `Buy Bitcoin, ETH Make 💰💰💰 low low prices. 
-          Guaranteed return on investment. HMU DMs open!!`,
+      tweetText: `La mayor exportación de Australia son los boomerangs. También son la mayor importación.`,
       replies: [],
       isLiked: false,
       isRetweeted: false,
@@ -16,19 +15,19 @@ export const tweetsData = [
   {
       handle: `@poposlavski 🫶`,
       profilePic: `imagenes/popo.jpg`,
-      likes: 6500,
-      retweets: 234,
-      tweetText: `I need volunteers for a one-way mission to Mars 🪐. No experience necessary🚀`,
+      likes: 650,
+      retweets: 34,
+      tweetText: `Pepito, sal del coche y mira si funciona el intermitente... <br> <br> Ahora sí, ahora no, ahora sí, ahora no, ahora sí, ahora no…`,
       replies: [
                 {
               handle: `@clauchakimaki 💎`,
               profilePic: `imagenes/clau.jpg`,
-              tweetText: `Yes! Sign me up! 😎🛩`,
+              tweetText: `Doctor, doctor, no sé lo que me pasa que cada vez que tomo café me duele el ojo derecho.<br> <br> ¿Has probado a sacar la cucharilla de la taza?`,
           },
                 {
               handle: `@zorkabosnai 😎`,
               profilePic: `imagenes/zorka.jpg`,
-              tweetText: `I went last year😴`,
+              tweetText: `¿Qué pasa si se va la luz en una escuela privada? Que no se ve ni un pijo.`,
           },
       ],
       isLiked: false,
@@ -42,17 +41,17 @@ export const tweetsData = [
       profilePic: `imagenes/zorka.jpg`,
       likes: 10,
       retweets: 3,
-      tweetText: `Are you a coder if you only know HTML?`,
+      tweetText: `Mamá, mamá, los spaghetti se están pegando. <br><br>  Déjalos que se maten.`,
       replies: [
           {
               handle: `@clauchakimaki 💎`,
               profilePic: `imagenes/clau.jpg`,
-              tweetText: `No. Obviosuly not. Go get a job in McDonald's.`,
+              tweetText: `Mi ordenador me gana al ajedrez, pero yo le gano boxeando.`,
           },
           {
               handle: `@poposlavski 🫶`,
               profilePic: `imagenes/popo.jpg`,
-              tweetText: `You are wonderful just as you are! ❤️`,
+              tweetText: `Pero mira que te he dicho diez mil millones de veces que no exageres…`,
           },
       ],
       isLiked: false,
