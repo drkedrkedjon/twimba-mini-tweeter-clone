@@ -146,7 +146,7 @@ function generarHtml() {
             <span class="tweet-interaccion"><i data-replies="${tweet.uuid}" class="fa-regular fa-comment-dots"></i> ${tweet.replies.length}</span>
             <span class="tweet-interaccion"><i style="color: ${likesColor}" data-likes="${tweet.uuid}" class="icono-color fa-solid fa-heart"></i> ${tweet.likes}</span>
             <span class="tweet-interaccion"><i style="color: ${retweetColor}" data-retweets="${tweet.uuid}" class="icono-color fa-solid fa-retweet"></i> ${tweet.retweets}</span>
-            <span class="tweet-interaccion"><i data-replytweet="${tweet.uuid}" class="fa-regular fa-reply"></i></span>
+            <span class="tweet-interaccion"><i data-replytweet="${tweet.uuid}" class="fa-solid fa-reply"></i></span>
             <span class="tweet-interaccion">${tweet.canDelete ? deleteIcon : ''
       }</span>
           </div>
