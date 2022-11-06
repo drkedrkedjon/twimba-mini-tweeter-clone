@@ -28,7 +28,7 @@ function newReplay(tweetUuid) {
   const tweetEncontrado = twimbaFeed.find((tweet) => tweet.uuid === tweetUuid);
   tweetEncontrado.replies.unshift({
     handle: `@drkedrkedjon 💩`,
-    profilePic: `/imagenes/sasa.jpg`,
+    profilePic: `imagenes/sasa.jpg`,
     tweetText: textInput.value,
   });
   tweetEncontrado.isReplyVisible = false;
@@ -78,7 +78,7 @@ function newTweet() {
   if (tweetInput.value) {
     const newTweetObject = {
       handle: `@drkedrkedjon 💩`,
-      profilePic: `/imagenes/sasa.jpg`,
+      profilePic: `imagenes/sasa.jpg`,
       likes: 0,
       retweets: 0,
       tweetText: `${tweetInput.value}`,

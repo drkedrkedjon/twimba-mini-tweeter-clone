@@ -1,7 +1,7 @@
 export const tweetsData = [   
   {
       handle: `@clauchakimaki 💎`,
-      profilePic: `/imagenes/clau.jpg`,
+      profilePic: `imagenes/clau.jpg`,
       likes: 27,
       retweets: 10,
       tweetText: `Buy Bitcoin, ETH Make 💰💰💰 low low prices. 
@@ -14,14 +14,14 @@ export const tweetsData = [
   },    
   {
       handle: `@poposlavski 🫶`,
-      profilePic: `/imagenes/popo.jpg`,
+      profilePic: `imagenes/popo.jpg`,
       likes: 6500,
       retweets: 234,
       tweetText: `I need volunteers for a one-way mission to Mars 🪐. No experience necessary🚀`,
       replies: [
                 {
               handle: `@clauchakimaki 💎`,
-              profilePic: `/imagenes/clau.jpg`,
+              profilePic: `imagenes/clau.jpg`,
               tweetText: `Yes! Sign me up! 😎🛩`,
           },
                 {
